@@ -1,6 +1,5 @@
 import streamlit as st
 import os
-import shutil
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -16,6 +15,7 @@ from pytesseract import image_to_string
 from docx import Document
 from PIL import Image
 import magic
+import shutil
 
 load_dotenv()
 groq_api_key = os.getenv("GROQ_API_KEY")
